@@ -8,6 +8,10 @@
 
 截图直达是一款主打“快速截图识图 + 一键发送到 AI”的效率工具扩展，帮助用户减少繁琐操作，把“截图、保存、上传、切换页面”的多步流程缩短成一步。
 
+
+## 360 插件中心
+
+[在 360 插件中心查看插件详情](https://ext.se.360.cn/#/extension-detail?id=elodhdllhbmgfchoogckemjamianklac)
 ## 概述
 
 你是否经常遇到这些问题：
@@ -117,4 +121,5 @@ Apache 2.0. See [LICENSE](LICENSE).
 ## Downloads
 
 - CRX package: lens-capture-extension.crx in the repository root.
+
 
