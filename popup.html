@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>截图直达</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      html, body {
+        margin: 0;
+        width: 320px;
+        background: #f8fafc;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #0f172a;
+      }
+
+      body {
+        padding: 16px;
+        box-sizing: border-box;
+      }
+
+      .card {
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+        padding: 16px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      p {
+        margin: 8px 0 0;
+        font-size: 13px;
+        line-height: 1.6;
+        color: #475569;
+      }
+
+      .engine-setting {
+        margin-top: 14px;
+      }
+
+      .engine-setting label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 13px;
+        color: #334155;
+      }
+
+      .engine-setting select {
+        width: 100%;
+        min-height: 42px;
+        padding: 0 12px;
+        border: 1px solid #cbd5e1;
+        border-radius: 12px;
+        background: #fff;
+        font: 500 14px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #0f172a;
+      }
+
+      .shortcut {
+        margin-top: 14px;
+        padding: 10px 12px;
+        border-radius: 12px;
+        background: #f1f5f9;
+        font-size: 13px;
+        color: #334155;
+      }
+
+      .shortcut strong {
+        color: #7c3aed;
+      }
+
+      .actions {
+        display: grid;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      button {
+        border: 0;
+        border-radius: 12px;
+        min-height: 44px;
+        padding: 0 14px;
+        font: 600 14px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        cursor: pointer;
+      }
+
+      .primary {
+        background: linear-gradient(135deg, #7c3aed, #2563eb);
+        color: #fff;
+      }
+
+      .secondary {
+        background: #e2e8f0;
+        color: #0f172a;
+      }
+
+      .message {
+        margin-top: 12px;
+        min-height: 18px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #dc2626;
+      }
+
+      .support {
+        margin-top: 14px;
+        border-top: 1px solid #e2e8f0;
+        padding-top: 14px;
+      }
+
+      .support details {
+        border-radius: 14px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        overflow: hidden;
+      }
+
+      .support summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 12px 14px;
+        font: 600 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #0f172a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .support summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .support summary::after {
+        content: '展开';
+        font-size: 12px;
+        color: #64748b;
+        font-weight: 500;
+      }
+
+      .support details[open] summary::after {
+        content: '收起';
+      }
+
+      .support-body {
+        padding: 0 14px 14px;
+      }
+
+      .support-text {
+        margin: 0 0 12px;
+        font-size: 12px;
+        line-height: 1.6;
+        color: #475569;
+      }
+
+      .support-image {
+        display: block;
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid #e2e8f0;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>截图直达</h1>
+      <p>截图后立即识图，或一键直达常用 AI 与搜图目标。</p>
+      <div class="engine-setting">
+        <label for="engineSelect">默认目标</label>
+        <select id="engineSelect">
+          <option value="google">Google Lens</option>
+          <option value="baidu">百度识图</option>
+          <option value="bing">Bing Visual Search</option>
+          <option value="yandex">Yandex Images</option>
+          <option value="chatgpt">ChatGPT 新聊天</option>
+          <option value="deepseek">DeepSeek 新聊天</option>
+          <option value="kimi">Kimi 新聊天</option>
+        </select>
+      </div>
+      <div class="shortcut">当前快捷键：<strong id="shortcut">读取中…</strong></div>
+      <div class="actions">
+        <button id="startCapture" class="primary">开始截图直达</button>
+        <button id="openShortcuts" class="secondary">设置快捷键</button>
+      </div>
+      <div id="message" class="message"></div>
+      <div class="support">
+        <details>
+          <summary>支持开发者</summary>
+          <div class="support-body">
+            <p class="support-text">如果截图直达帮你省下了一点时间，欢迎赞赏支持持续更新。</p>
+            <img class="support-image" src="assets/wechat-donate.jpg" alt="微信赞赏码：喜欢这个工具，欢迎赞赏" />
+          </div>
+        </details>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
