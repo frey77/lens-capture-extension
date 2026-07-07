@@ -1,4 +1,12 @@
-﻿# 截图直达`r`n`r`n![插件图标](icons/icon128.png)`r`n`r`n## 老司机必备插件：一键截图识图，懂的都懂。`r`n`r`n> 看到图先截一手，识图、问 AI 都能接。`r`n`r`n截图直达是一款主打“快速截图识图 + 一键发送到 AI”的效率工具扩展，帮助用户减少繁琐操作，把“截图、保存、上传、切换页面”的多步流程缩短成一步。
+﻿# 截图直达
+
+![插件图标](icons/icon128.png)
+
+## 老司机必备插件：一键截图识图，懂的都懂。
+
+> 看到图先截一手，识图、问 AI 都能接。
+
+截图直达是一款主打“快速截图识图 + 一键发送到 AI”的效率工具扩展，帮助用户减少繁琐操作，把“截图、保存、上传、切换页面”的多步流程缩短成一步。
 
 ## 概述
 
@@ -100,5 +108,3 @@ Lens Capture shortens that whole process so you can search or ask immediately af
 - Better for high-frequency use: less repeated uploading and page switching
 
 If your workflow is "see it, search it" or "capture it, ask AI immediately," Lens Capture can save a noticeable amount of time.
-
-
