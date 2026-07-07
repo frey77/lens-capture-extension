@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "截图直达",
+  "version": "1.0.1",
+  "description": "截图后立即识图，或一键直达 ChatGPT、DeepSeek、Kimi 等 AI。",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "contextMenus",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://chat.deepseek.com/*",
+    "https://chatgpt.com/*",
+    "https://graph.baidu.com/*",
+    "https://www.bing.com/*",
+    "https://www.google.com/*",
+    "https://kimi.moonshot.cn/*",
+    "https://www.kimi.com/*",
+    "https://lens.google.com/*",
+    "https://yandex.com/*"
+  ],
+  "background": {
+    "service_worker": "worker-main.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "截图直达",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "capture-search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "截图后立即识图或直达 AI"
+    }
+  }
+}
