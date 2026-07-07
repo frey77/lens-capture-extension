@@ -113,3 +113,8 @@ If your workflow is "see it, search it" or "capture it, ask AI immediately," Len
 
 Apache 2.0. See [LICENSE](LICENSE).
 
+
+## Downloads
+
+- CRX package: lens-capture-extension.crx in the repository root.
+
