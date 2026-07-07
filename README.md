@@ -108,3 +108,4 @@ Lens Capture shortens that whole process so you can search or ask immediately af
 - Better for high-frequency use: less repeated uploading and page switching
 
 If your workflow is "see it, search it" or "capture it, ask AI immediately," Lens Capture can save a noticeable amount of time.
+
