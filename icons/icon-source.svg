@@ -1,0 +1,49 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="128" y1="96" x2="896" y2="928" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.55" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(776 752) rotate(90) scale(224)">
+      <stop stop-color="#22D3EE" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="0" y="0" width="1024" height="1024" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="48" stdDeviation="64" flood-color="#0F172A" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="url(#bg)"/>
+  <circle cx="792" cy="744" r="240" fill="url(#glow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="136" y="160" width="544" height="416" rx="112" fill="white" fill-opacity="0.98"/>
+    <rect x="184" y="208" width="448" height="320" rx="64" fill="#EEF7FF"/>
+
+    <path d="M216 336V240H312" stroke="#2563EB" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M648 336V240H552" stroke="#2563EB" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M216 400V496H312" stroke="#2563EB" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M648 400V496H552" stroke="#2563EB" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <circle cx="432" cy="368" r="56" fill="#3B82F6"/>
+    <circle cx="432" cy="368" r="24" fill="white"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M472 584L696 688" stroke="white" stroke-width="56" stroke-linecap="round"/>
+    <path d="M664 616L832 704L656 800" fill="white"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <circle cx="792" cy="744" r="164" fill="#0369A1"/>
+    <circle cx="792" cy="744" r="134" fill="#10B981"/>
+    <circle cx="792" cy="744" r="126" stroke="rgba(255,255,255,0.26)" stroke-width="8"/>
+
+    <text x="744" y="778" fill="white" font-size="92" font-family="Segoe UI, Arial, sans-serif" font-weight="800" letter-spacing="-2">AI</text>
+  </g>
+
+  <g opacity="0.5">
+    <text x="672" y="912" fill="white" font-size="48" font-family="Segoe UI, Arial, sans-serif" font-weight="600" letter-spacing="1.6">Frey</text>
+  </g>
+</svg>
